@@ -31,9 +31,18 @@ const OurStory: React.FC = () => {
             <div className="relative">
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-8">
                 <div className="text-center mb-6">
-                  <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <span className="text-white text-2xl font-bold">MRC</span>
-                  </div>
+                  
+                  {/* --- IMAGE PLACEMENT --- */}
+                  {/* I've replaced the initials circle with an <img> tag. */}
+                  {/* 1. Add your image of Maryanne to the `public` folder. */}
+                  {/*    For example: /public/maryanne-chiriboga.jpg */}
+                  {/* 2. The `src` attribute below should point to that image. */}
+                  <img
+                    src="/maryanne-chiriboga.jpg" // <-- UPDATE THIS PATH IF NEEDED
+                    alt="Maryanne Rozier Chiriboga, Founder & CEO"
+                    className="w-24 h-24 rounded-full object-cover mx-auto mb-4 border-4 border-white dark:border-gray-800 shadow-lg"
+                  />
+                  
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white">Maryanne Rozier Chiriboga</h3>
                   <p className="text-gray-600 dark:text-gray-400">Founder & CEO</p>
                 </div>
@@ -289,9 +298,15 @@ const OurStory: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
-              <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-xl font-bold">MRC</span>
-              </div>
+              
+              {/* --- IMAGE PLACEMENT 2 --- */}
+              {/* Replaced the initials with an image here as well for consistency. */}
+              <img
+                src="/maryanne-chiriboga.jpg" // <-- Use the same image path
+                alt="Maryanne Rozier Chiriboga, Founder & CEO"
+                className="w-24 h-24 rounded-full object-cover mx-auto mb-4 shadow-md"
+              />
+
               <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Maryanne Rozier Chiriboga</h3>
               <p className="text-blue-600 dark:text-blue-400 font-medium mb-3">Founder & CEO</p>
               <p className="text-gray-600 dark:text-gray-400 text-sm">
@@ -300,7 +315,7 @@ const OurStory: React.FC = () => {
             </div>
 
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
-              <div className="w-20 h-20 bg-gradient-to-br from-green-600 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-24 h-24 bg-gradient-to-br from-green-600 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white text-xl font-bold">DW</span>
               </div>
               <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Dr. David Williams</h3>
@@ -311,7 +326,7 @@ const OurStory: React.FC = () => {
             </div>
 
             <div className="bg-white dark:bg-gray-800 rounded-lg p-6 text-center shadow-md hover:shadow-lg transition-shadow duration-300">
-              <div className="w-20 h-20 bg-gradient-to-br from-orange-600 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-24 h-24 bg-gradient-to-br from-orange-600 to-red-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-white text-xl font-bold">LM</span>
               </div>
               <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">Lisa Martinez</h3>
